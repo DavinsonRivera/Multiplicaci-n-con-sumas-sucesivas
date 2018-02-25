@@ -22,7 +22,10 @@ int suma_sucesiva(x, y)
 }
 
 int main()
-{
+{	
+	suma_sucesiva();
 	
+	system ("pause");
+	return 0;
 }
 
