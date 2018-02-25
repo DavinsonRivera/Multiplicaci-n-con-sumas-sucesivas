@@ -23,9 +23,22 @@ int suma_sucesiva(x, y)
 
 int main()
 {	
+	int continuar;
+	
 	suma_sucesiva();
 	
-	system ("pause");
+	printf ("\nPresione: 1 para continuar \nPresione: 0 para terminar \nPosteriormente presione Enter\n");
+	printf ("\nDesea Continuar? \n");
+	scanf ("%i", &continuar);
+	
+	while (continuar == 1)
+	{
+		suma_sucesiva();
+		printf ("\nPresione: 1 para continuar \nPresione: 0 para terminar \nPosteriormente presione Enter\n");
+		printf ("\nDesea Continuar? \n");
+		scanf ("%i", &continuar);
+	}
+	
 	return 0;
 }
 
